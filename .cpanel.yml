@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/bargautb/public_html/
     - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
