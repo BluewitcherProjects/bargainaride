@@ -28,14 +28,14 @@ class UserController extends Controller
 
                 $new=new user();
                 $new->mobile=$request->mobile;
-                $new->otp=rand(111111,999999);
+                $new->otp=123456;//rand(111111,999999);
                 $new->password= Hash::make('serajalam');
                 $new->save();
                 // return response([
                 //     'message' => ['These credentials do not match our records.']
                 // ], 404);
             }else{
-                $user->otp=rand(111111,999999);
+                $user->otp=123456;//rand(111111,999999);
                 $user->update();
             }
         
